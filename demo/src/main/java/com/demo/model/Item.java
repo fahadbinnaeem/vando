@@ -5,6 +5,8 @@
  */
 package com.demo.model;
 
+import com.vividsolutions.jts.geom.Point;
+
 /**
  *
  * @author ahsan
@@ -18,7 +20,43 @@ public class Item {
     private String subCategory;
     private String manufacturingDate;
     private String photo;
-    private String geoLocation;
+    private String address;
+    private String quatity;
+    private String contact;
+    private String geoLocatoin;
+
+    public String getGeoLocatoin() {
+        return geoLocatoin;
+    }
+
+    public void setGeoLocatoin(String geoLocatoin) {
+        this.geoLocatoin = geoLocatoin;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getQuatity() {
+        return quatity;
+    }
+
+    public void setQuatity(String quatity) {
+        this.quatity = quatity;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
     private int userId;
 
     public int getItemId() {
@@ -75,14 +113,6 @@ public class Item {
 
     public void setPhoto(String photo) {
         this.photo = photo;
-    }
-
-    public String getGeoLocation() {
-        return geoLocation;
-    }
-
-    public void setGeoLocation(String geoLocation) {
-        this.geoLocation = geoLocation;
     }
 
     public int getUserId() {

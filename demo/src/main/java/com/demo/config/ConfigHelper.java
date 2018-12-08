@@ -35,6 +35,7 @@ public class ConfigHelper {
     public static String config_description = "description";
     public static String config_value = "value";
 
+    //User app config sql keys
     public static String insert_user_key = "insert_user_key";
     public static String update_user_key = "update_user_key";
     public static String delete_user_key = "delete_user_key";
@@ -56,6 +57,9 @@ public class ConfigHelper {
     public static String activation_token = "activation_token";
     public static String activation_token_expiry = "activation_token_expiry";
     public static String user_phoneuuid = "phone_uuid";
+    
+    //item app config sql keys
+    public static String insert_item_key = "insert_item_key";
     
     public static String user_insertion_success_msg = "User Added Successfully";
     public static String user_update_success_msg = "User Updated Successfully";
