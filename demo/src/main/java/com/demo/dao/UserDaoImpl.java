@@ -53,8 +53,7 @@ public class UserDaoImpl extends JdbcDaoSupport implements UserDao {
                 u.getPassword(),
                 u.getAddress(),
                 u.getContact(),
-                u.getPhoneUuid(),
-                u.getUser_id()
+                u.getPhoneUuid()
             });
         } catch (DuplicateKeyException ex) {
             throw new IllegalArgumentException("Email already exists");
@@ -96,6 +95,7 @@ public class UserDaoImpl extends JdbcDaoSupport implements UserDao {
         Object user = null;
         try {
             user = getJdbcTemplate().queryForObject(sql, new Object[]{email}, new UserRowMapper());
+            System.out.println("");
         } catch (DataAccessException e) {
         }
         if (user == null) {
@@ -107,7 +107,7 @@ public class UserDaoImpl extends JdbcDaoSupport implements UserDao {
     @Override
     public List<User> getAllUsers() {
         String sql = configDao.getConfigValue(configHelper.getValue(ConfigHelper.find_all_user_key));
-        List<User> users = getJdbcTemplate().query(sql, new BeanPropertyRowMapper(User.class));
+        List<User> users = getJdbcTemplate().query(sql, new UserRowMapper());
         return users;
     }
 

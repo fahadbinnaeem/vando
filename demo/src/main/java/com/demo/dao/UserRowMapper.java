@@ -26,7 +26,8 @@ public class UserRowMapper implements RowMapper{
         u.setUsername(rs.getString(ConfigHelper.user_username));
         u.setContact(rs.getString(ConfigHelper.user_phone));
         u.setAddress(rs.getString(ConfigHelper.user_address));
-        u.setPhoneUuid(rs.getString(""));
+        u.setPhoneUuid(rs.getString(ConfigHelper.user_phoneuuid));
+//        u.setPassword(rs.getString(ConfigHelper.user_password));
         return u;
     }
     
