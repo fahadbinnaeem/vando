@@ -31,7 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/")
-public class DemoController {
+public class UserController {
     
     @Autowired
     UserService userService;
