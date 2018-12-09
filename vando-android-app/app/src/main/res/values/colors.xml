@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1b141d</color>
+    <color name="primary_dark">#18111a</color>
+    <color name="primary_darker">#141016</color>
+    <color name="accent">#FFFFFF</color>
+
+    <color name="primaryL">#FFC107</color>
+    <color name="primaryL_dark">#FFA000</color>
+    <color name="primaryL_light">#FFECB3</color>
+    <color name="accentL">#FF5722</color>
+    <color name="primaryL_text">#212121</color>
+    <color name="secondaryL_text">#757575</color>
+    <color name="iconsL">#212121</color>
+    <color name="dividerL">#BDBDBD</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="search_layover_bg">@color/gray</color>
+    <color name="search_field_bg">@color/white_ish</color>
+
+
+    <color name="gray">#ff888888</color>
+
+    <color name="white_50">#88ffffff</color>
+    <color name="black_50">#88000000</color>
+    <color name="gray_50">#88888888</color>
+
+    <color name="white_ish">#fffefefe</color>
+</resources>

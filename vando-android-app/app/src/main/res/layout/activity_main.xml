@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:title="MSocial"
+        android:titleTextColor="@android:color/darker_gray">
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_ish"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Food"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="clothes"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Misc"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvWelcome"
+                    android:textSize="15dp"/>
+
+            </RelativeLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvMainActivityFeeds"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+            </ScrollView>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Post"
+            android:id="@+id/bCreatePost_mainActivity"
+            android:layout_gravity="right | bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="10dp"
+
+            android:textSize="10dp"/>
+    </FrameLayout>
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/badge_layout_frnd_req"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginRight="40dp">-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/frnd_req_relative_layout_item_count"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageButton-->
+                    <!--android:id="@+id/bFrndReqNotification"-->
+                    <!--android:layout_width="35dip"-->
+                    <!--android:layout_height="35dip"-->
+                    <!--android:background="@drawable/notification_frnd"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/frnd_req_notification_count"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignRight="@id/frnd_req_relative_layout_item_count"-->
+                <!--android:background="@android:drawable/ic_notification_overlay"-->
+                <!--android:text="7"-->
+                <!--android:textColor="#FFF"-->
+                <!--android:textSize="10sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:visibility="invisible"/>-->
+        <!--</RelativeLayout>-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/badge_layout_feed_notifications"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginRight="40dp">-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/feed_notification_relative_layout_item_count"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageButton-->
+                    <!--android:id="@+id/bFeedNotification"-->
+                    <!--android:layout_width="35dip"-->
+                    <!--android:layout_height="35dip"-->
+                    <!--android:background="@drawable/notification_bell"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/feed_notification_count"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignRight="@id/feed_notification_relative_layout_item_count"-->
+                <!--android:background="@android:drawable/ic_notification_overlay"-->
+                <!--android:text="27"-->
+                <!--android:textColor="#FFF"-->
+                <!--android:textSize="10sp"-->
+                <!--android:textStyle="bold" />-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+
+
+
+</LinearLayout>

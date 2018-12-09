@@ -1,0 +1,32 @@
+package com.vando.tpl.vando.Constants;
+
+import android.content.Context;
+
+
+
+import com.vando.tpl.vando.Utilities.CipherUtils;
+
+@SuppressWarnings("FieldCanBeLocal")
+public class DecryptManagerConstants {
+
+    private Context mContext;
+
+    private static DecryptManagerConstants mInstance;
+
+    private final String O_M_K = "MiXViOMloiBvoSa2KD9g7RGtFSSMhQq83llsbfh7X9cDaNNKT4bQFStaj6XV3fn0";
+
+    private DecryptManagerConstants(Context context) {
+        mContext = context;
+    }
+
+    public static DecryptManagerConstants getInstance(Context context) {
+        if (mInstance == null)
+            mInstance = new DecryptManagerConstants(context);
+
+        return mInstance;
+    }
+
+    public String getKey() {
+        return CipherUtils.decrypt(mContext, O_M_K);
+    }
+}
