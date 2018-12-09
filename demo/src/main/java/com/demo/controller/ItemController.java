@@ -78,7 +78,7 @@ public class ItemController {//
         item.setManufacturingDate(requestParams.get("manufacturingdate"));
         item.setPhoto("/tmp/" + fileName);
         item.setQuatity(requestParams.get("quantity"));
-//        item.setSubCategory(requestParams.get("subcategory"));
+        item.setSubCategory(requestParams.get("subcategory"));
         ArrayList<Item> items = new ArrayList<Item>();
         items.add(item);
         itemService.insertItem(items);

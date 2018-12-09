@@ -53,7 +53,7 @@ public class ItemDAOImpl extends JdbcDaoSupport implements ItemDAO {
                     item.getGeoLocatoin(),
                     item.getAddress(),
                     item.getQuatity(),
-                    item.getContact(),});
+                    item.getContact()});
             } catch (DuplicateKeyException ex) {
                 throw new IllegalArgumentException("Email already exists");
             }
